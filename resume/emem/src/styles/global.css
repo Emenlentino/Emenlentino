@@ -1,0 +1,24 @@
+body {
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.nav-link:hover {
+  color: #6B21A8 !important;
+  transition: color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #6B21A8;
+  color: #fff;
+  border-color: #6B21A8;
+}
+
+section {
+  padding-top: 80px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

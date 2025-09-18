@@ -1,0 +1,19 @@
+src/
+├── assets/                         # Images, icons, and downloadable resume
+│   ├── profile.jpg
+│   └── Emenlentino_Resume.pdf
+├── components/                     # Reusable UI components
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── About.jsx
+│   ├── Projects.jsx
+│   ├── Contact.jsx
+│   ├── Resume.jsx
+│   └── Footer.jsx
+├── data/                           # JSON or JS files for dynamic content
+│   ├── projects.js
+│   └── skills.js
+├── styles/                         # Custom CSS overrides or themes
+│   └── global.css
+├── App.jsx                         # Main layout
+└── main.jsx                        # Entry point

@@ -1,0 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link:hover {
+  color: #6610f2; /* Bootstrap purple */
+  transition: color 0.3s ease;
+}
