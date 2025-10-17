@@ -1,93 +1,240 @@
-<h1 align="center">Hi 👋, I'm Emem</h1>
-<h3 align="center">Passionate Full Stack Developer & Tech Enthusiast from Abuja, Nigeria</h3>
+# 🚀 Enhanced Resume Portfolio
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=emenlentino&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
-</p>
+A modern, animated React resume portfolio with Material-UI, featuring smooth animations, dark mode, and PDF download functionality.
 
-I'm a Full Stack Developer with a knack for crafting innovative, user-focused applications that solve real-world problems. With expertise in both front-end and back-end technologies, I thrive on rapid prototyping, seamless deployment, and collaborating on open-source projects. Currently, I'm diving deeper into AI-driven web development and seeking exciting beta roles to push the boundaries of tech.
+## ✨ Key Features
+
+### 🎨 **Modern UI/UX**
+- **Gradient Backgrounds** - Beautiful gradient effects on cards and headers
+- **Glassmorphism Effects** - Modern frosted glass effects on navigation
+- **Card-Based Layout** - Clean, organized content in elevated cards
+- **Responsive Design** - Works perfectly on all devices
+
+### 🎭 **Rich Animations**
+- **Page Transitions** - Smooth fade and slide animations between routes
+- **Floating FAB** - Animated floating action button with pulse effect
+- **Staggered Animations** - Sequential reveal of content items
+- **Hover Effects** - Interactive hover states on all interactive elements
+- **Loading Spinner** - Elegant CircularProgress during lazy loading
+
+### 🌓 **Dark Mode**
+- **Persistent Theme** - Theme preference saved to localStorage
+- **Smooth Transitions** - Animated theme switching
+- **Optimized Colors** - Carefully chosen colors for both light and dark modes
+
+### 📥 **PDF Download**
+- **One-Click Download** - Download resume PDF directly from About page
+- **Animated Button** - Eye-catching download button with gradient background
+- **Public Folder Integration** - Serves PDF from `/public/resume.pdf`
+
+### ⚡ **Performance**
+- **Lazy Loading** - Code-split sections load on demand
+- **Optimized Rendering** - React.memo and proper state management
+- **Fast Navigation** - React Router for instant page changes
+
+## 📁 Project Structure
+
+```
+emenlentino-resume/
+├── public/
+│   ├── resume.pdf          # 📄 Your resume PDF file
+│   ├── resume.json         # 📊 Resume data (served as API)
+│   └── favicon.ico         # 🎯 Site favicon
+├── src/
+│   ├── components/
+│   │   └── ResumeSections.jsx   # 📑 All section components
+│   ├── context/
+│   │   ├── ResumeContext.jsx    # 🔄 Resume data provider
+│   │   └── ThemeContext.jsx     # 🎨 Theme management
+│   ├── App.jsx             # 🏠 Main app component
+│   └── main.jsx            # ⚙️ App entry point
+├── index.html              # 📄 HTML template with SEO
+├── package.json            # 📦 Dependencies
+└── README.md              # 📖 This file
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd emenlentino-resume
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Add your resume PDF**
+   - Place your PDF file in `/public/resume.pdf`
+   - The filename MUST be exactly `resume.pdf`
+
+4. **Update resume data**
+   - Edit `/public/resume.json` with your information
+   - Follow the existing structure
+
+5. **Run development server**
+   ```bash
+   npm run dev
+   ```
+
+6. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## 📝 Customization
+
+### Updating Resume Content
+
+Edit `/public/resume.json` to update your:
+- Personal information
+- Experience
+- Skills
+- Projects
+- Education
+- Contact details
+- Languages
+- Certifications
+
+### Changing Colors
+
+Edit `src/context/ThemeContext.jsx` to customize:
+- Primary colors
+- Secondary colors
+- Background colors
+- Typography
+
+### Adding New Sections
+
+1. Add section component in `ResumeSections.jsx`
+2. Add route in `App.jsx`
+3. Add navigation item in `navItems` array
+
+## 🎨 Animation Details
+
+### Page Transitions
+```javascript
+// Fade in from bottom
+initial={{ opacity: 0, y: 20 }}
+animate={{ opacity: 1, y: 0 }}
+exit={{ opacity: 0, y: -20 }}
+```
+
+### Floating FAB
+```javascript
+// Continuous floating animation
+animate={{ y: [0, -10, 0] }}
+transition={{ duration: 2, repeat: Infinity }}
+```
+
+### Staggered Children
+```javascript
+// Sequential reveal of items
+variants={containerVariants}
+staggerChildren: 0.1
+```
+
+## 🔧 Technologies Used
+
+- **React 19** - UI library
+- **React Router DOM** - Routing
+- **Material-UI (MUI) v7** - Component library
+- **Framer Motion** - Animation library
+- **Vite** - Build tool
+- **Axios** - HTTP client
+
+## 📱 Responsive Breakpoints
+
+- **Mobile**: < 600px
+- **Tablet**: 600px - 960px
+- **Desktop**: > 960px
+
+## 🌐 Deployment
+
+### Vercel (Recommended)
+```bash
+npm install -g vercel
+vercel
+```
+
+### Netlify
+```bash
+npm run build
+# Drag and drop the 'dist' folder to Netlify
+```
+
+### GitHub Pages
+```bash
+npm run build
+# Use gh-pages or manual deployment
+```
+
+## 🐛 Troubleshooting
+
+### PDF Download Not Working
+- Ensure `resume.pdf` is in `/public/` folder
+- Check browser console for errors
+- Verify file name is exactly `resume.pdf`
+
+### Animations Not Smooth
+- Check if hardware acceleration is enabled
+- Reduce motion in browser settings may affect animations
+- Try different browser
+
+### Data Not Loading
+- Verify `resume.json` is valid JSON
+- Check browser console for fetch errors
+- Ensure development server is running
+
+## 📄 License
+
+MIT License - feel free to use this project for your own resume!
+
+## 🙏 Credits
+
+Created by **Emem Ufeh** (Emenlentino)
+
+Built with ❤️ using React, Material-UI, and Framer Motion
 
 ---
 
-## 🚀 About Me
+## 🆘 Support
 
-- 🔭 **Currently working on**: Building scalable web apps and exploring AI integrations.
-- 🌱 **Learning**: Advanced Python, React.js, and modern DevOps tools.
-- 👯 **Open to**: Collaborations on open-source projects, AI-driven startups, or innovative ideas.
-- 💬 **Ask me about**: Full Stack development, JavaScript, or cycling tips 🚴!
-- ⚡ **Fun fact**: I turn workouts 🏋🏽 and bike rides into coding inspiration.
+If you encounter any issues:
+1. Check the troubleshooting section above
+2. Review the browser console for errors
+3. Ensure all dependencies are installed correctly
+4. Verify your `resume.json` structure matches the template
 
----
+## 🔄 Updates & Improvements
 
-## 🛠️ Tech Stack
+### Recent Enhancements
+- ✅ Added PDF download functionality
+- ✅ Implemented proper loading spinners
+- ✅ Enhanced animations throughout
+- ✅ Modernized Material-UI styling
+- ✅ Added gradient effects
+- ✅ Improved card designs
+- ✅ Added avatar components
+- ✅ Enhanced responsive design
+- ✅ Added theme persistence
+- ✅ Improved accessibility
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="JavaScript" height="40" width="40" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg" alt="TypeScript" height="40" width="40" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React" height="40" width="40" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" height="40" width="40" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3" height="40" width="40" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" height="40" width="40" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#" height="40" width="40" />
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js" height="40" width="40" />
-</div>
-
----
-
-## 📊 GitHub Stats
-
-> Note: If GitHub Stats API is down, you can deploy your own instance via [GitHub Readme Stats](https://github.com/anuraghazra/github-readme-stats#deploy-on-your-own-vercel-instance).
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=emenlentino&show_icons=true&theme=radical" alt="Emem's GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=emenlentino&layout=compact&theme=radical" alt="Top Languages" />
-</div>
+### Coming Soon
+- 🔜 Print-friendly styling
+- 🔜 Multiple language support
+- 🔜 Analytics integration
+- 🔜 Blog section
+- 🔜 Testimonials page
 
 ---
 
-## 🌟 Featured Projects
-
-- **[Bing-Script](https://github.com/Emenlentino/Bing-Script)**: A Python-based automation tool for Bing searches, featuring cooldown bypass and cross-platform compatibility.
-- **[Project Name](https://github.com/Emenlentino/project-name)**: A brief description of another notable project (replace with your own).
-- **[Project Name](https://github.com/Emenlentino/project-name)**: Showcase another project here to highlight your skills.
-
-> Want to collaborate? Open an issue or PR on any of my repos!
-
----
-
-## 📫 Connect with Me
-
-<div align="center">
-  <a href="https://linkedin.com/in/emenlentino" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:emenlentino@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-  </a>
-  <a href="https://instagram.com/emenlentino" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
-  </a>
-  <a href="https://twitch.tv/emenlentino" target="_blank">
-    <img src="https://img.shields.io/badge/Twitch-9146FF?style=for-the-badge&logo=twitch&logoColor=white" alt="Twitch" />
-  </a>
-  <a href="https://discord.gg/emenlentino" target="_blank">
-    <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
-  </a>
-  <a href="https://youtube.com/channel/Emenlentino" target="_blank">
-    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" />
-  </a>
-</div>
-
----
-
-## 🙌 Support My Work
-
-Enjoy my projects? Consider supporting my open-source efforts with a coffee ☕ or a small donation:
-
-- **Litecoin Wallet**: `LfRfxt8M8hSpnYw2x9cWq8yt24uMhTC4si`
-
----
-
-<p align="center">
-  <i>Let's build something amazing together!</i>
-</p>
+**Happy coding! 🚀**
