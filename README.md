@@ -6,6 +6,13 @@
 </p>
 
 I'm a Full Stack Developer with a knack for crafting innovative, user-focused applications that solve real-world problems. With expertise in both front-end and back-end technologies, I thrive on rapid prototyping, seamless deployment, and collaborating on open-source projects. Currently, I'm diving deeper into AI-driven web development and seeking exciting beta roles to push the boundaries of tech.
+---
+<h4 align="center">
+    <a href="https://git.io/typing-svg">
+        <img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=500&size=25&duration=1000&pause=500&color=ffffff&width=435&lines=🧠+Premium+Software+Engineer;🌟+Innovative+Problem+Solver;📈+Data+Science+Enthusiast;🔍+Analytical+Thinker;⚡+Freelance+Developer" 
+             alt="🧠 Premium Software Engineer"/>
+    </a>
+</h4>
 
 ---
 
