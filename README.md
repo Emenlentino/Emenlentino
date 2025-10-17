@@ -1,11 +1,4 @@
 <h1 align="center">Hi 👋, I'm Emem</h1>
-<h3 align="center">Passionate Full Stack Developer & Tech Enthusiast from Abuja, Nigeria</h3>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=emenlentino&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
-</p>
-
-I'm a Full Stack Developer with a knack for crafting innovative, user-focused applications that solve real-world problems. With expertise in both front-end and back-end technologies, I thrive on rapid prototyping, seamless deployment, and collaborating on open-source projects. Currently, I'm diving deeper into AI-driven web development and seeking exciting beta roles to push the boundaries of tech.
 ---
 <h4 align="center">
     <a href="https://git.io/typing-svg">
@@ -13,6 +6,16 @@ I'm a Full Stack Developer with a knack for crafting innovative, user-focused ap
              alt="🧠 Premium Software Engineer"/>
     </a>
 </h4>
+
+---
+
+<h3 align="center">Passionate Full Stack Developer & Tech Enthusiast from Abuja, Nigeria</h3>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=emenlentino&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
+</p>
+
+I'm a Full Stack Developer with a knack for crafting innovative, user-focused applications that solve real-world problems. With expertise in both front-end and back-end technologies, I thrive on rapid prototyping, seamless deployment, and collaborating on open-source projects. Currently, I'm diving deeper into AI-driven web development and seeking exciting beta roles to push the boundaries of tech.
 
 ---
 
