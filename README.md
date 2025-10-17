@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Emem</h1>
----
+
 <h4 align="center">
     <a href="https://git.io/typing-svg">
         <img src="https://readme-typing-svg.herokuapp.com?font=Montserrat&weight=500&size=25&duration=1000&pause=500&color=ffffff&width=435&lines=🧠+Premium+Software+Engineer;🌟+Innovative+Problem+Solver;📈+Data+Science+Enthusiast;🔍+Analytical+Thinker;⚡+Freelance+Developer" 
